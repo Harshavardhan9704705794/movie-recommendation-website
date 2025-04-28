@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Mood Recommendations</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Movie Mood Recommender</h1>
+      <p>Tell us your mood and we'll suggest some movies!</p>
+    </header>
+
+    <main>
+      <div class="mood-selector">
+        <label for="moodSelect">Select your mood:</label>
+        <select id="moodSelect">
+          <option value="">-- Select Mood --</option>
+          <option value="happy">Happy</option>
+          <option value="sad">Sad</option>
+          <option value="excited">Excited</option>
+          <option value="romantic">Romantic</option>
+        </select>
+        <button id="recommendBtn">Get Movies</button>
+      </div>
+
+      <div id="recommendations" class="movie-list"></div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Movie Mood Recommender. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
